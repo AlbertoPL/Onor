@@ -1,0 +1,75 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Noca Payment</title>
+</head>
+<body>
+
+<!-- BEGIN ONECLICKPAY FORM -->
+<script type="text/javascript">
+
+// Required values
+var OCPformReplyTo = "http://localhost:8080/mainLayout.html"; // URL user is returned to
+var OCPformTransmitterID = "0"; // leave as 0 if there are no sub-merchants
+var OCPformMerchantID = "408"; // replace with your merchantID, this cannot be blank!
+var OCPformMerchantCustomerIdentity = "username"; //This is the user's identity at Merchant i.e. your website/portal; When testing please choose a different username each for each user <br />
+var OCPformInvoiceID = "";
+var OCPformTotalAmount = 42.42;
+var OCPformCurrency = "USD";
+var OCPformContactInformationFirstName = "Bob";
+var OCPformContactInformationLastName = "Blob;
+var OCPformContactInformationEmail = "bob@blob.com"; //For testing purposes use unique user names; If an email address you're testing with is already in our system,it  will complain that "user already exists"
+
+var OCPformMerchantKey = "468881dc-b521-4ff4-8894-005134245531"; // This variable is used to determine transaction based on merchant API-Key; This key is available in settings tab at https://merchant.noca.com 
+
+var OCPformDescription = "loyaltyCardFace"; // This is the description of the  product(s). It can be set to the description of the first item if there are multiple items in the shopping cart.
+
+// Optional but recommended values
+
+// The following three fields must all be defined if one of them is defined
+var OCPformContactInformationPhoneSMSenabled; // true if mobile phone
+var OCPformContactInformationPhoneAreaCode;
+var OCPformContactInformationPhone7Digits;
+
+var OCPformExistingUserAtMerchant; // true if the user has previously transacted with the merchant
+
+
+// The following seven fields must all be defined if one of them is defined
+// If there is more than one item, include information on the first item only
+var OCPformItemID; // Can be a SKU
+var OCPformItemName;
+var OCPformItemDescription;
+var OCPformItemQuantity;
+var OCPformItemPrice;
+var OCPformItemDiscount;
+var OCPformItemAmount;
+
+// Billing address is required. The fields that are required are labeled as "Required" 
+var OCPformBillingInformationSalutation; // Mr., Ms., Mrs., Dr., etc
+var OCPformBillingInformationFirstName;     //Required
+var OCPformBillingInformationLastName;      //Required
+var OCPformBillingInformationAddressLine1;  //Required
+var OCPformBillingInformationAddressLine2; // set equal to "" if there is no second address line
+var OCPformBillingInformationCity;          //Required
+var OCPformBillingInformationCounty;
+var OCPformBillingInformationState;         //Required (Two letter abbreviation)
+var OCPformBillingInformationCountry; // Two letter abbreviation
+var OCPformBillingInformationPostalCode;    //Required
+
+</script>
+<!--  Noca Code, do not modify unless instructed. This will post the  transaction to sandbox. For posting to production servers see http://developer.noca.com/getting-started/moving-to-production/  -->
+<form id="OCPform" action="https://sandbox.noca.com/merchant/PaymentPresentmentLite#noca_payment_screen" method="post">
+	<input type="image" id="OCPsubmit" src="https://secure2.noca.com/images/SecureCheck_rounded30.png">
+<!-- <input type="image" id="OCPsubmit" src="https://sandbox.noca.com/static/merchant/secure_check.gif"> -->
+</form>
+<h3>
+	Loading...<br />
+	Please wait.
+</h3>
+<script type="text/javascript" src="https://secure2.noca.com/static/merchant/NocaIntegrationLite.js"></script> <script type="text/javascript">
+//document.getElementById('OCPsubmit').click(); // comment thi s if you want users to click manually to submit a transaction
+</script>
+<!-- END ONECLICKPAY FORM -->
+</body>
+</html>

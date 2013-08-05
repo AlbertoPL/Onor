@@ -1,0 +1,121 @@
+@import "../reindeer/styles.css";
+
+body{
+	font-family: helvectica, sans-serif;
+}
+
+#header, #content, #footer{
+	/*background-color: white;
+	-moz-border-radius: 15px;
+	border-radius: 15px;*/
+	text-align: center;
+	width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0px;
+}
+
+#menu td a:hover, #menu td 
+{
+	background-color: white;
+	color: #669900;
+}
+
+#menu td, #menu a{
+	text-align: center;
+	text-decoration: none;
+	background-color: #669900;
+	color: white;
+	font-weight: bold;
+	-moz-bottom-right-radius: 15px;
+	-moz-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	height: 30px;
+	font-size: 16px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+#menu table{
+	-moz-bottom-right-radius: 15px;
+	-moz-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px
+}
+
+.v-form legend {
+	font-weight:bold;
+	font-color:#660099;
+	font-size: 14px;
+
+	}
+
+#banner h1{
+	font-size: 60pt;
+	font-weight: bold;
+	color: #660099;
+	text-align: center;
+}
+
+#smallBanner, #banner{
+	font-size: 20pt;
+	font-weight: bold;
+	color: #660099;
+	text-align: left;
+}
+
+#smallBanner #title, #banner #title{
+	font-size: 40pt;
+}
+
+#banner{
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+.loyaltyCard, .reportingLayout{
+	font-size: 10pt;
+	color: #660099;	
+}
+
+#footer{
+	background-color: #669900;
+	text-align: right;
+	width: 900px;
+	height: 30px;
+	-moz-bottom-right-radius: 15px;
+	-moz-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.loyaltyCard{
+	border: 5px solid;
+	border-color: #669900; 
+}
+
+#signup a
+{
+	font-size: 40px;
+	color: #669900;
+	font-weight: bold;
+	background-color: white;
+	text-decoration: none;
+	-moz-top-right-radius: 15px;
+	-moz-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-top-left-radius: 15px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+#signup a:hover
+{
+	background-color: #669900;
+	color: white;
+}
